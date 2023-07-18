@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Beats</title>
+	<meta name="viewport" content="device-width, initial-scale=1, minimum-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://kit.fontawesome.com/80b9348964.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- ASIDE SECTION -->
+	<aside>
+		<!-- there are two sections in aside, navigation and library -->
+		<nav>
+			<!-- home button -->
+			<div class="nav-menu">
+				<div class="nav-menu-img" id="home" >
+					<i class="fa-sharp fa-solid fa-house" style="color: white; height: 70%; width: 80px;"></i>
+				</div>
+				<span>Home</span>
+			</div>
+			<!-- search button -->
+			<div class="nav-menu">
+				<div class="nav-menu-img" >
+					<i class="fa-solid fa-magnifying-glass" style="color: white; height: 70%; width: 80px;"></i>
+				</div>
+				<span>Search</span>
+			</div>
+		</nav>
+
+		<section id="library">
+			<!-- this has all the liked songs and personal playlists -->
+			<!-- library menu, which is fixed -->
+			<div id="library-menu">
+
+					<div class="library-icon" id="bookmark"><i class="fa-solid fa-bookmark" style="color: white;"></i></div>
+					<span>Your Library</span>
+					<div class="library-icon" id="plus"><i class="fa-solid fa-plus" style="color: white;"></i></div>
+					<div class="library-icon" id="right-arrow"><i class="fa-solid fa-arrow-right" style="color: white;"></i></div>
+
+					<!-- tabs for sorting -->
+				<div id="tabs">
+					<div class="tab">Playlists</div>
+					<div class="tab">Albums</div>
+					<div class="tab" id="podcasts-and-shows">Podcasts & Shows</div>
+				</div>
+			</div>
+
+			<!-- library items -->
+			<div id="library-container">
+
+				<!-- search bar and dropdown for "sort by" option -->
+				<div id="search-logo"><i class="fa-solid fa-magnifying-glass" style="color: white;"></i></div>
+				<div id="sort-by-options">
+					<div class="dropdown">
+						  <button class="dropbtn">Recents<i class="fa-solid fa-caret-down" style="color: white; margin-left: 8px;"></i></button>
+						  <div class="dropdown-content">
+						  	<span>Sort by</span>
+						  	<a href="#">Recents</a>
+						    <a href="#">Recently Added</a>
+						    <a href="#">Alphabetically</a>
+						    <a href="#">Creator</a>
+						  </div>
+						</div>
+				</div>
+
+				<div class="library-item">
+					<div class="library-item-img liked-songs"></div>
+					<div class="library-item-name">
+						<p>Liked Songs</p>
+					</div>
+					<div class="library-item-author">
+						<span>Playlist • 949 Songs</span>
+					</div>
+				</div>
+				<div class="library-item">
+					<div class="library-item-img" id="your-episodes"></div>
+					<div class="library-item-name">
+						<p>Your Episodes</p>
+					</div>
+					<div class="library-item-author">
+						<span>Saved Episodes</span>
+					</div>
+				</div>
+				<div class="library-item">
+					<div class="library-item-img long-drives"></div>
+					<div class="library-item-name">
+						<p>Long Drives</p>
+					</div>
+					<div class="library-item-author">
+						<span>Playlist • Ishhita</span>
+					</div>
+				</div>
+				<div class="library-item">
+					<div class="library-item-img on-repeat"></div>
+					<div class="library-item-name">
+						<p>On Repeat</p>
+					</div>
+					<div class="library-item-author">
+						<span>Playlist • Beats</span>
+					</div>
+				</div>
+				<div class="library-item">
+					<div class="library-item-img about-you-song"></div>
+					<div class="library-item-name">
+						<p>The 1975 : Essentials</p>
+					</div>
+					<div class="library-item-author">
+						<span>Playlist • Ishhita</span>
+					</div>
+				</div>
+				<div class="library-item">
+					<div class="library-item-img taylor-nation"></div>
+					<div class="library-item-name">
+						<p>Taylor Nation</p>
+					</div>
+					<div class="library-item-author">
+						<span>Playlist • Lizzie</span>
+					</div>
+				</div>
+				<div class="library-item">
+					<div class="library-item-img chill-station"></div>
+					<div class="library-item-name">
+						<p>Chill Station</p>
+					</div>
+					<div class="library-item-author">
+						<span>Playlist • Beats</span>
+					</div>
+				</div>
+				<div class="library-item">
+					<div class="library-item-img" id="drake-radio"></div>
+					<div class="library-item-name">
+						<p>Drake Radio</p>
+					</div>
+					<div class="library-item-author">
+						<span>Playlist • Beats</span>
+					</div>
+				</div>
+				<div class="library-item">
+					<div class="library-item-img" id="top-gaming-tracks"></div>
+					<div class="library-item-name">
+						<p>Top Gaming Tracks</p>
+					</div>
+					<div class="library-item-author">
+						<span>Playlist • Beats</span>
+					</div>
+				</div>
+				<div class="library-item">
+					<div class="library-item-img" id="folklore"></div>
+					<div class="library-item-name">
+						<p>Folklore</p>
+					</div>
+					<div class="library-item-author">
+						<span>Album • Taylor Swift</span>
+					</div>
+				</div>
+				<div class="library-item">
+					<div class="library-item-img" id="my-dear-melancholy"></div>
+					<div class="library-item-name">
+						<p>My Dear Melancholy,</p>
+					</div>
+					<div class="library-item-author">
+						<span>Album • The Weeknd</span>
+					</div>
+				</div>
+				<div class="library-item">
+					<div class="library-item-img" id="making-mirrors"></div>
+					<div class="library-item-name">
+						<p>Making Mirrors</p>
+					</div>
+					<div class="library-item-author">
+						<span>Album • Gotye</span>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+	</aside>
+
+	<!-- MAIN SECTION OF PAGE -->
+	<main>
+
+		<header>
+		<!-- go back/ go ahead buttons -->
+		<div class="direction-btn"><i class="fa-solid fa-chevron-left" style="color: white;"></i></div>
+		<div class="direction-btn"><i class="fa-solid fa-chevron-left fa-flip-horizontal" style="color: white;"></i></div>
+		<!-- install app -->
+		<div id="install-app">
+				<!-- <i class="fa-sharp fa-regular fa-circle-down" style="color: white; height: 10px;"></i> -->
+				<i class="fa-regular fa-circle-down" style="color: white; height: 6px;"></i>
+				<span>Install App</span>
+		</div>
+		<!-- my profile picture -->
+		<div id="my-pfp"></div>
+		</header>
+
+		<section id="content">
+
+				<h1>Good Evening, Ishhita</h1>
+				<!-- container for al playlist cards -->
+				<div id="card-display">
+					<!-- playlist cards -->
+					<div class="playlist-card"> 
+						<!-- play button which appears only on hovering -->
+						<div class="play-button">
+							<a href="#"><i class="fa-solid fa-circle-play fa-3x" style="color: #1ed661;"></i></a>
+						</div>
+						<!-- playlist cover and title -->
+						<div class="playlist-img liked-songs"></div>
+						<span>Liked Songs</span>
+					</div>
+
+					<div class="playlist-card"> 
+						<div class="play-button">
+							<a href="#"><i class="fa-solid fa-circle-play fa-3x" style="color: #1ed661;"></i></a>
+						</div>
+						<div class="playlist-img taylor-nation"></div>
+						<span>Taylor Nation</span>
+					</div>
+
+					<div class="playlist-card"> 
+						<div class="play-button">
+							<a href="#"><i class="fa-solid fa-circle-play fa-3x" style="color: #1ed661;"></i></a>
+						</div>
+						<div class="playlist-img about-you-song"></div>
+						<span>The 1975 : Essentials</span>
+					</div>
+
+					<div class="playlist-card"> 
+						<div class="play-button">
+							<a href="#"><i class="fa-solid fa-circle-play fa-3x" style="color: #1ed661;"></i></a>
+						</div>
+						<div class="playlist-img on-repeat"></div>
+						<span>On Repeat</span>
+					</div>
+
+					<div class="playlist-card"> 
+						<div class="play-button">
+							<a href="#"><i class="fa-solid fa-circle-play fa-3x" style="color: #1ed661;"></i></a>
+						</div>
+						<div class="playlist-img chill-station"></div>
+						<span>Chill Station</span>
+					</div>
+
+					<div class="playlist-card"> 
+						<div class="play-button">
+							<a href="#"><i class="fa-solid fa-circle-play fa-3x" style="color: #1ed661;"></i></a>
+						</div>
+						<div class="playlist-img long-drives"></div>
+						<span>Long Drives</span>
+					</div>
+
+				</div>
+
+				<!-- Your Shows -->
+				<section id="your-shows">
+					<h3 class="section-heading">Your Shows</h3>
+					<!-- container for all cards -->
+					<div class="album-display">
+
+							<div class="album-card">
+								<div class="album-img" id="psychology-of-your-20s"></div>
+							<div class="album-title"><span>The Psychology of your 20s<span></div>
+							<div class="album-text"><span>iHeartPodcasts</span></div>
+							</div>
+
+							<div class="album-card">
+								<div class="album-img" id="meditation-sounds">
+							</div>
+							<div class="album-title"><span>Meditation Sounds<span></div>
+							<div class="album-text"><span>Meditation Sounds</span></div>
+							</div>
+
+							<div class="album-card">
+								<div class="album-img" id="think-fast-talk-smart"></div>
+							<div class="album-title"><span>Think Fast, Talk Smart: Communication Techniques<span></div>
+							<div class="album-text"><span>Stanford GSB</span></div>
+							</div>
+
+							<div class="album-card">
+								<div class="album-img" id="the-retrievals">
+							</div>
+							<div class="album-title"><span>The Retrievals<span></div>
+							<div class="album-text"><span>Serial Productions & The New York Times</span></div>
+							</div>
+
+							<div class="album-card">
+								<div class="album-img" id="ted-talks-daily">
+							</div>
+							<div class="album-title"><span>TED Talks Daily<span></div>
+							<div class="album-text"><span>TED</span></div>
+							</div>
+
+					</div>
+				</section>
+
+				<section id="made-for-you">
+					<h3 class="section-heading">Made For You</h3>
+					<!-- container for all cards -->
+					<div class="album-display">
+
+							<div class="album-card">
+								<div class="album-img" id="release-radar">
+									<div class="play-button">
+							<a href="#"><i class="fa-solid fa-circle-play fa-3x" style="color: #1ed661;"></i></a>
+						</div>
+							</div>
+							<div class="album-title"><span>Release Radar<span></div>
+							<div class="album-text"><span>Catch all the latest music from artists you follow, plus new singles picked for you. Updates every Friday.</span></div>
+							</div>
+
+							<div class="album-card">
+								<div class="album-img" id="discover-weekly">
+									<div class="play-button">
+							<a href="#"><i class="fa-solid fa-circle-play fa-3x" style="color: #1ed661;"></i></a>
+						</div>
+							</div>
+							<div class="album-title"><span>Discover Weekly<span></div>
+							<div class="album-text"><span>Your weekly mixtape of fresh music. Enjoy new music and deep cuts picked for you. Updates every Monday.</span></div>
+							</div>
+
+							<div class="album-card">
+								<div class="album-img" id="funk-and-soul">
+									<div class="play-button">
+							<a href="#"><i class="fa-solid fa-circle-play fa-3x" style="color: #1ed661;"></i></a>
+						</div>
+								</div>
+							<div class="album-title"><span>Funk and Soul Classics<span></div>
+							<div class="album-text"><span>A selection of the greatest funk & soul records ever made.</span></div>
+							</div>
+
+							<div class="album-card">
+								<div class="album-img" id="daily-mix1">
+									<div class="play-button">
+							<a href="#"><i class="fa-solid fa-circle-play fa-3x" style="color: #1ed661;"></i></a>
+						</div>
+							</div>
+							<div class="album-title"><span>Daily Mix 1<span></div>
+							<div class="album-text"><span>Drake, Post Malone, Quavo and more</span></div>
+							</div>
+
+							<div class="album-card">
+								<div class="album-img" id="daily-mix2">
+									<div class="play-button">
+							<a href="#"><i class="fa-solid fa-circle-play fa-3x" style="color: #1ed661;"></i></a>
+						</div>
+							</div>
+							<div class="album-title"><span>Daily Mix 2<span></div>
+							<div class="album-text"><span>Hozier, Lorde, girl in red and more</span></div>
+							</div>
+
+					</div>
+				</section>
+
+				<section id="Popular Radio">
+					<h3 class="section-heading">Your Top Mixes</h3>
+					<!-- container for all cards -->
+					<div class="album-display">
+
+							<div class="album-card">
+								<div class="album-img" id="indie-mix">
+									<div class="play-button">
+							<a href="#"><i class="fa-solid fa-circle-play fa-3x" style="color: #1ed661;"></i></a>
+						</div>
+							</div>
+							<div class="album-title"><span>Indie Mix<span></div>
+							<div class="album-text"><span>Indie Dance music picked just for you.</span></div>
+							</div>
+
+							<div class="album-card">
+								<div class="album-img" id="two-thousands-mix">
+									<div class="play-button">
+							<a href="#"><i class="fa-solid fa-circle-play fa-3x" style="color: #1ed661;"></i></a>
+						</div>
+							</div>
+							<div class="album-title"><span>2010s Mix<span></div>
+							<div class="album-text"><span>Best of 2010s music picked just for you.</span></div>
+							</div>
+
+							<div class="album-card">
+								<div class="album-img" id="chill-moody-mix">
+									<div class="play-button">
+							<a href="#"><i class="fa-solid fa-circle-play fa-3x" style="color: #1ed661;"></i></a>
+						</div>
+								</div>
+							<div class="album-title"><span>Chill Moody Mix<span></div>
+							<div class="album-text"><span>Give yourself that break and relax with the best songs to chill to picked just for you.</span></div>
+							</div>
+
+							<div class="album-card">
+								<div class="album-img" id="pop-rap-mix">
+									<div class="play-button">
+							<a href="#"><i class="fa-solid fa-circle-play fa-3x" style="color: #1ed661;"></i></a>
+						</div>
+							</div>
+							<div class="album-title"><span>Pop Rap Mix<span></div>
+							<div class="album-text"><span>Pop Rap music picked just for you</span></div>
+							</div>
+
+							<div class="album-card">
+								<div class="album-img" id="car-mix">
+									<div class="play-button">
+							<a href="#"><i class="fa-solid fa-circle-play fa-3x" style="color: #1ed661;"></i></a>
+						</div>
+							</div>
+							<div class="album-title"><span>Car Mix<span></div>
+							<div class="album-text"><span>Driving music picked just for you</span></div>
+							</div>
+
+					</div>
+				</section>
+
+
+				<footer>
+					<div id="company">
+						<h4>Company</h4>
+						<ul>
+							<li><a href="#">About</a></li><br>
+							<li><a href="#">Jobs</a></li><br>
+							<li><a href="#">For the Record</a></li><br>
+						</ul>
+					</div>
+					<div id="communities">
+						<h4>Communities</h4>
+						<ul>
+							<li><a href="#">For Artists</a></li><br>
+							<li><a href="#">Developers</a></li><br>
+							<li><a href="#">Advertising</a></li><br>
+							<li><a href="#">Investors</a></li><br>
+							<li><a href="#">Vendors</a></li><br>
+							<li><a href="#">Beats for Work</a></li><br>
+						</ul>
+					</div>
+					<div id="useful-links">
+						<h4>Useful Links</h4>
+						<ul>
+							<li><a href="#">Support</a></li><br>
+							<li><a href="#">Free Mobile App</a></li><br>
+						</ul>
+					</div>
+					<div id="socials">
+						<div class="social">
+							<i class="fa-brands fa-instagram"></i>
+						</div>
+						<div class="social">
+							<i class="fa-brands fa-twitter"></i>
+						</div>
+						<div class="social">
+							<i class="fa-brands fa-facebook"></i>
+						</div>
+					</div>
+
+					<hr>
+
+					<div id="links">
+						<ul class="horizontal-list">
+							<li><a href="#">Legal</a></li>
+							<li><a href="#">Privacy Center</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Cookies</a></li>
+							<li><a href="#">About Ads</a></li>
+							<li><a href="#">Accessibility</a></li>
+						</ul>
+						<span>
+							BEATS
+						</span>
+					</div>
+
+				</footer>
+
+		</section>
+
+	</main>
+
+	<div id="music-player">
+		<!-- album cover/ song cover -->
+		<div id="music-cover"></div>
+		<!-- song info -->
+		<div id="song-name">
+			<span>About You</span>
+		</div>
+		<div id="song-artist">
+			<span>The 1975</span>
+		</div>
+		<!-- liked and download icon -->
+		<div id="icons">
+			<i class="fa-solid fa-heart" style="color: white"></i>
+			<i class="fa-solid fa-circle-arrow-down" style="color: white"></i>
+		</div>
+		<!-- dummy player image -->
+		<div id="player"></div>
+		<!-- volume and other buttons -->
+		<div id="other-icons">
+			<i class="fa-solid fa-sliders" style="color: white"></i>
+			<i class="fa-solid fa-headphones" style="color: white"></i>
+			<i class="fa-solid fa-list-ul" style="color: white"></i>
+			<i class="fa-solid fa-tv" style="color: white"></i>
+			<i class="fa-solid fa-volume-low" style="color: white"></i>
+			<div id="vol-image"></div>
+
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+
+</body>
+</html>
